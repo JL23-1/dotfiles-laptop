@@ -25,10 +25,6 @@ mv ${BASEDIR}/bashrc ~/.bashrc
 #mkdir -p ~/.config/alacritty
 #mv ${BASEDIR}/alacritty.yml ~/.config/alacritty/alacritty.yml
 
-# xinitrc
-rm  -f ~/.xinitrc
-mv ${BASEDIR}/xinitrc ~/.xinitrc
-
 # lightcord theme
 #rm -f ~/.config/Lightcord_BD/themes/DiscordPlus.theme.css
 #mv ${BASEDIR}/DiscordPlus.theme.css ~/.config/Lightcord_BD/themes/DiscordPlus.theme.css
