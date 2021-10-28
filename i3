@@ -2,13 +2,14 @@ font pango: Oxanium
 bar {
 position top
 status_command i3status
+set $bgcolor #141414
 colors {
-                background #888a85
+                background $bgcolor
                 statusline #2F4F4F
                 separator #2F4F4F
                 # colorclass       <border> <background> <text>
-                focused_workspace  #888a85  #888a85     #D3D3D3
-                inactive_workspace #888a85  #888a85     #2F4F4F
+                focused_workspace  $bgcolor  $bgcolor     #D3D3D3
+                inactive_workspace $bgcolor  $bgcolor     #2F4F4F
 
         }
 }
@@ -207,6 +208,7 @@ client.unfocused            $bg        $bg         $ia
 client.focused_inactive     $bg        $bg         $ac
 client.urgent               $rd        $rd         $tx
 default_border pixel 4
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-swc
+# bindsym Mod1+Tab workspace next
